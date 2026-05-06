@@ -1,16 +1,17 @@
-#include <stdio.h>
-
 int main() {
     
     int num = 150, a; 
     int *x;
     
     x = &num;
-    printf("%d %p", num, x);
-
-     float pi = 3.1415, decimal;
+    a = *x;
+    
+    printf("%d %p\n", num, x);
+    
+    float pi = 3.1415, decimal;
     float *ptrF;
     ptrF = &pi; 
-    printf("%f %p", pi, ptrF);
+    printf("%.3f %.3f %p", pi, decimal, ptrF);
     
     return 0;
+}
